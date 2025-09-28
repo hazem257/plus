@@ -1,0 +1,132 @@
+.footer {
+  backdrop-filter: blur(0حء) saturate(180%);
+  -webkit-backdrop-filter: blur(14px) saturate(180%);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+direction: rtl;
+  color: #e0f2ff;
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  font-family: "Cairo", sans-serif;
+}
+
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.right-container{
+    display: flex;
+    flex-direction:  row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-section .logo img {
+  height: 80px;
+  filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.3));
+  transition: transform 0.3s ease;
+}
+.footer-section .logo img:hover {
+  transform: scale(1.05);
+}
+
+.rights {
+  font-weight: 700;
+  color: #0e94cd;
+  opacity: 0.85;
+}
+
+.developed {
+  font-size: 14px;
+  direction: ltr;
+  color: #3982c7;
+}
+.developed a {
+  color: #0c96ff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.developed a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+}
+
+.footer-col h4 {
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: #a4ee04;
+  font-size: 18px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 6px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin: 6px 0;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #0084ff;
+  transition: 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #1353ad;
+  transform: translateX(-4px);
+}
+
+.phone-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(140, 198, 242, 0.9);
+  color: #003662;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+.phone-btn:hover {
+  background: #fff;
+  color: #003662;
+  transform: translateY(-3px);
+}
+
+.supervisor {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  font-size: 13px;
+  color: #165fad;
+  opacity: 0.8;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.designer {
+  text-align: center;
+  font-size: 14px;
+  margin-top: -10px;
+  color: #ffe082;
+  font-weight: 700;
+}

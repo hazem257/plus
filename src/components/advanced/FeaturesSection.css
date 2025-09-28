@@ -1,0 +1,96 @@
+.features-section {
+  padding: 80px 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 60px;
+  color: #1d1d1d;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* ===== Glassmorphism Card ===== */
+.feature-card {
+  background: rgba(255, 255, 255, 0.15); /* شفاف */
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: right;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card:hover {
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.feature-number {
+  font-size: 36px;
+  font-weight: 900;
+  color: rgba(0, 119, 204, 0.9);
+  margin-bottom: 15px;
+}
+
+.feature-animation {
+  margin-bottom: 15px;
+}
+
+.feature-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #0077cc;
+  margin-bottom: 10px;
+}
+
+.feature-desc {
+  font-size: 14px;
+  color: rgba(30, 30, 30, 0.85);
+  line-height: 1.6;
+}
+
+/* ===== Dark Mode ===== */
+@media (prefers-color-scheme: dark-mode) {
+  .features-section {
+    background: linear-gradient(135deg, #1a1a1a, #111827);
+  }
+
+  .feature-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  }
+
+  .feature-number {
+    color: #38bdf8; /* أزرق فاتح */
+  }
+
+  .feature-title {
+    color: #38bdf8;
+  }
+
+ 
+
+}
+  .dark-mode .section-title{
+    color: rgba(240, 248, 255, 0.708);
+  }
+ .dark-mode .feature-desc {
+    color: rgba(200, 200, 200, 0.85);
+  }

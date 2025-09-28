@@ -1,0 +1,79 @@
+.years-section {
+  padding: 80px 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1d1d1d;
+  margin-bottom: 60px;
+}
+
+.years-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* ===== Glass Cards ===== */
+.year-card {
+  display: block;
+  padding: 40px 20px;
+  border-radius: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.year-card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+.year-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #0077cc;
+  margin-bottom: 15px;
+}
+
+.year-desc {
+  font-size: 1rem;
+  color: rgba(30, 30, 30, 0.85);
+}
+
+/* ===== Dark Mode ===== */
+@media (prefers-color-scheme: dark) {
+  .years-section {
+    background: linear-gradient(135deg, #111827, #1a1a1a);
+  }
+
+  .section-title {
+    color: #f0f0f0;
+  }
+
+  .year-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  }
+
+  .year-title {
+    color: #38bdf8;
+  }
+
+ 
+}
+.dark-mode .year-desc {
+    color: rgba(200, 200, 200, 0.85);
+  }

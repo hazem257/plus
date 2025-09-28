@@ -1,0 +1,241 @@
+/* ====== Layout ====== */
+.register-page {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Cairo", sans-serif;
+}
+
+.register-image {
+  flex: 1;
+  display: none;
+}
+
+.image-bg {
+  height: 90%;
+  background-size: cover;
+  border-radius: 2rem;
+  margin: 2rem;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 54, 98, 0.7);
+}
+
+.image-text {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  color: #fff;
+  max-width: 300px;
+}
+
+.image-text h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.image-text p {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.register-form {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+/* ====== Form Box ====== */
+.form-box {
+  width: 100%;
+  max-width: 480px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Progress */
+.progress-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #eee;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress-value {
+  height: 100%;
+  background: linear-gradient(90deg, #0ea5e9, #0284c7);
+  border-radius: 6px;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.logo img {
+  height: 70px;
+}
+
+/* Titles */
+.title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.already-account {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-link {
+  color: #0ea5e9;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* ====== Form ====== */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group.full {
+  grid-column: span 2;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.form-group input:focus {
+  border-color: #0ea5e9;
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.2);
+}
+
+.form-group label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  background: #fff;
+  padding: 0 5px;
+  font-size: 14px;
+  color: #777;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.form-group input:focus + label,
+.form-group input:valid + label {
+  top: -8px;
+  font-size: 12px;
+  color: #0ea5e9;
+}
+
+/* Submit */
+.submit-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+  background: linear-gradient(90deg, #0ea5e9, #0284c7);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(90deg, #0284c7, #0369a1);
+  transform: translateY(-2px);
+}
+/* ====== Select Fields ====== */
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+  font-size: 15px;
+  background-color: #fff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form-group select:focus {
+  border-color: #0ea5e9;
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.2);
+}
+
+/* Label for select (optional, إذا حابب تعمل مثل input floating labels) */
+.form-group select + label {
+  position: absolute;
+  top: -8px;
+  left: 12px;
+  font-size: 12px;
+  color: #0ea5e9;
+  background: #fff;
+  padding: 0 5px;
+}
+
+/* Error messages */
+.error {
+  display: block;
+  color: #dc2626;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+
+/* ====== Responsive ====== */
+@media (min-width: 900px) {
+  .register-image {
+    display: block;
+  }
+}

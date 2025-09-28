@@ -1,0 +1,15 @@
+.flex{
+  display: flex;
+}
+.border{
+  border: 2px red solid;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+body.dark-mode{
+    background-color: #070F2B;
+}

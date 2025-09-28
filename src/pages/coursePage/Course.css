@@ -1,0 +1,156 @@
+.course-container {
+  padding: 20px;
+  font-family: "Tajawal", sans-serif;
+  color: #1e293b;
+}
+
+/* هيدر */
+.course-header {
+  background: linear-gradient(to right, #1dac62, #0d6f42);
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.back-btn {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  transition: background 0.3s;
+}
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.header-text h1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+.header-text p {
+  font-size: 16px;
+  opacity: 0.9;
+  margin-top: 5px;
+}
+
+/* المحتوى */
+.course-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (min-width: 1024px) {
+  .course-content {
+    flex-direction: row-reverse;
+  }
+}
+
+.course-side {
+  flex: 1;
+  text-align: center;
+}
+
+.course-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.free-btn {
+  background: #dcfce7;
+  border: 1px solid #22c55e;
+  color: #15803d;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.course-main {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* عن الكورس */
+.about-course {
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+.about-course h2 {
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+/* الدروس */
+.lessons {
+  background: #f1f5f9;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+.lessons h2 {
+  margin-bottom: 15px;
+  color: #0f172a;
+}
+
+.lesson-item {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.lesson-header {
+  width: 100%;
+  text-align: right;
+  padding: 12px 15px;
+  background: #1dac62;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+
+.lesson-body {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lesson-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.exam-btn {
+  background: #1dac62;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.exam-btn:hover {
+  background: #0d6f42;
+}
